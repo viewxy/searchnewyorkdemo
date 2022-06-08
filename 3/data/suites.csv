@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jun 08 08:36:30 GMT 2022","Wed Jun 08 08:36:32 GMT 2022","1949","","TestRadioButton","","TestRadioButton","RadioButtonTest","RadioButtonTest()",""
+"passed","Wed Jun 08 08:36:27 GMT 2022","Wed Jun 08 08:36:30 GMT 2022","3278","","PageBaseTest","","PageBaseTest","testSearch","testSearch()",""
+"passed","Wed Jun 08 08:36:32 GMT 2022","Wed Jun 08 08:36:34 GMT 2022","1797","","TestAlerts","","TestAlerts","AlertsTest","AlertsTest()",""
