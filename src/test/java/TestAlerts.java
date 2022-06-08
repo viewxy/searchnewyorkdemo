@@ -8,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestRadioButton {
+public class TestAlerts {
     WebDriver driver;
-    RadioButton radioButton;
+    Alerts alerts;
 
     @BeforeEach
     public void setup() {
@@ -29,20 +29,17 @@ public class TestRadioButton {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
-        radioButton = new RadioButton(driver);
+        alerts = new Alerts(driver);
     }
 
-
-
     @Test
-    public void RadioButtonTest() throws InterruptedException {
-        radioButton.navigate();
-        radioButton.clickBox();
-        radioButton.clickCheckValueButton();
-        String actual = radioButton.getText();
-        String expected = "Radio button 'Female' is checked";
+    public void AlertsTest() {
+        alerts.navigate();
+        alerts.clickButton();
+        alerts.alertHandle();
+        String actual = alerts.getMessage();
+        String expected = "You pressed OK!";
 
         Assertions.assertEquals(expected, actual);
     }
-
 }
